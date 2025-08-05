@@ -26,7 +26,7 @@ export default function Home() {
       behavior={Platform.select({ ios: 'padding', android: undefined })}
     >
       <Card style={styles.card}>
-        <Card.Title title="💸 Tipper" titleStyle={styles.title} />
+        <Text style={styles.title}>💸 Tipper</Text>
         <Card.Content>
           <TextInput
             style={styles.input}
@@ -65,6 +65,7 @@ const styles = StyleSheet.create({
     fontSize: 28,
     textAlign: 'center',
     color: '#fff',
+    marginBottom: 20
   },
   input: {
     backgroundColor: '#333',
